@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&family=Poppins:wght@100;400;800&display=swap');
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.7;
+  background: #fef9e7;
+}

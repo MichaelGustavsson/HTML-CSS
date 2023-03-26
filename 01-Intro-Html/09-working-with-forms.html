@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulär</title>
+  </head>
+  <body>
+    <h1>Formulär</h1>
+    <form action="">
+      <label for="manufacturer">Tillverkare</label>
+      <!-- <input type="text" name="manufacturer" id="manufacturer" /><br /> -->
+      <select name="manufacturor" id="manufacturer">
+        <option value="-1">Välj Tillverkare</option>
+        <option value="1">Volvo</option>
+        <option value="2">Ford</option></select
+      ><br />
+      <label for="model">Modell</label>
+      <input type="text" name="model" id="model" /><br />
+      <label for="modelYear">Årsmodell</label>
+      <input type="number" name="modelYear" id="modelYear" /><br />
+      <label for="mileage">Körda km</label>
+      <input type="number" name="mileage" id="mileage" /><br />
+      <label for="registrationDate">Registreringsdatum</label>
+      <input type="date" name="registrationDate" id="registrationDate" />
+      <fieldset>
+        <legend>Bränsle typ:</legend>
+        <input type="radio" name="fueltype" id="diesel" />diesel<br />
+        <input type="radio" name="fueltype" id="petrol" />Bensin
+      </fieldset>
+      <fieldset>
+        <legend>utrustning</legend>
+        <input type="checkbox" name="navigator" id="navigator" />Navigator<br />
+        <input
+          type="checkbox"
+          name="parkingassistant"
+          id="parkingassistant" />Parkeringshjälp<br />
+      </fieldset>
+      <label for="description">Beskrivning</label><br />
+      <textarea
+        name="description"
+        id="description"
+        cols="70"
+        rows="5"></textarea>
+      <p>
+        <button type="submit">Spara</button>
+        <input type="button" value="Avbryt" />
+        <button type="reset">Töm formulär</button>
+      </p>
+    </form>
+  </body>
+</html>

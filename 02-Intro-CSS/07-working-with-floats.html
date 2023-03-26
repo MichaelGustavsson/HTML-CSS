@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Arbeta Floats</title>
+    <style>
+      /* Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      main {
+        /* width: 960px; */
+        max-width: 960px;
+        margin: auto;
+        margin-top: 70px;
+        margin-bottom: 50px;
+      }
+
+      h1 {
+        font-size: 32px;
+        font-style: italic;
+        font-weight: bold;
+        text-align: center;
+        color: #0277bd;
+      }
+
+      h3 {
+        font-size: 24px;
+        font-weight: 400;
+        color: #333;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      footer {
+        background: #222;
+        color: #f4f4f4;
+        padding: 5px 10px;
+      }
+      footer p {
+        font-size: 14px;
+      }
+
+      #main-header {
+        font-style: italic;
+        text-align: center;
+      }
+
+      #about,
+      #products,
+      #receipe {
+        background: #f9e79f;
+        border: solid 1px #795702;
+        border-radius: 10px;
+        padding: 10px 20px;
+        /* padding: 10px 20px;
+        margin: 30px 40px; */
+      }
+
+      #about {
+        float: left;
+        width: 48%;
+      }
+
+      #products {
+        float: right;
+        width: 50%;
+      }
+
+      #receipe {
+        margin: 10px 0 0 0;
+      }
+
+      .main-image {
+        width: 500px;
+        border: solid 1px #333;
+        border-radius: 10px;
+        opacity: 0.7;
+      }
+
+      .clear {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="main-header">
+      <h1>Mormor Dagny's bageri</h1>
+      <p>Ett familje bageri i 3:e generationen</p>
+      <img class="main-image" src="/images/display.jpg" alt="bread-display" />
+    </header>
+    <main>
+      <section>
+        <article id="about">
+          <h3>Om vårt bageri</h3>
+          <p>
+            <span class="primary-text">Lorem</span> ipsum dolor, sit amet
+            consectetur adipisicing elit. Mollitia adipisci similique eius
+            libero. Dolor natus magni voluptates recusandae minima dolorum
+            assumenda quidem aperiam saepe? Similique, labore dignissimos neque,
+            eaque odio autem, corrupti at consequatur et numquam dolores!
+            Recusandae, corrupti magni nostrum ab labore saepe numquam nihil.
+            Explicabo quia suscipit quam.
+          </p>
+        </article>
+        <article id="products">
+          <h3>Våra produkter</h3>
+          <p>
+            <span class="primary-text">Lorem</span> ipsum dolor sit amet
+            consectetur adipisicing elit. Amet quam molestiae, ipsa, nulla
+            repellat a explicabo nemo quo ratione eligendi tempore ea incidunt,
+            sapiente cumque facere. Similique repellat repellendus ad veniam
+            minus deleniti perspiciatis est nesciunt. Iste ut corrupti
+            doloremque at nisi, inventore, voluptatum quidem autem,
+            necessitatibus obcaecati beatae dolor ex rem expedita quia vero?
+            Fuga deleniti beatae veritatis dolores.
+          </p>
+        </article>
+        <div class="clear"></div>
+        <article id="receipe">
+          <h3>Recept</h3>
+          <p>
+            <span class="primary-text">Lorem</span> ipsum dolor sit amet
+            consectetur adipisicing elit. Amet quam molestiae, ipsa, nulla
+            repellat a explicabo nemo quo ratione eligendi tempore ea incidunt,
+            sapiente cumque facere. Similique repellat repellendus ad veniam
+            minus deleniti perspiciatis est nesciunt. Iste ut corrupti
+            doloremque at nisi, inventore, voluptatum quidem autem,
+            necessitatibus obcaecati beatae dolor ex rem expedita quia vero?
+            Fuga deleniti beatae veritatis dolores.
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright &copy;2023 Mormor Dagny's bageri</p>
+    </footer>
+  </body>
+</html>

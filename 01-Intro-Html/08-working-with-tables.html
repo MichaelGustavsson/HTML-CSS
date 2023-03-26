@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabeller</title>
+  </head>
+  <body>
+    <h1>Tabeller</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Kolumn 1</th>
+          <th>Kolumn 2</th>
+          <th>Kolumn 3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Värde 1</td>
+          <td>Värde 2</td>
+          <td>Värde 3</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr />
+    <!-- table>thead>tr>th*3^^tbody>tr>td*3 -->
+    <table border="1" cellpadding="3" cellspacing="5">
+      <caption>
+        Bilar i lager
+      </caption>
+      <thead>
+        <tr>
+          <th>Tillverkare</th>
+          <th>Modell</th>
+          <th>Årsmodell</th>
+          <th colspan="2">Fordonsnamn</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Volvo</td>
+          <td>V40</td>
+          <td>2017</td>
+          <td>Hatchback</td>
+          <td>2.0</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="5">Copyright 2023 SoftTech Development</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
