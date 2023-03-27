@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Positionering</title>
+    <style>
+      /* Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      main {
+        max-width: 800px;
+        margin: auto;
+        margin-top: 70px;
+        margin-bottom: 50px;
+      }
+
+      h1 {
+        font-size: 32px;
+        font-style: italic;
+        font-weight: bold;
+        color: #0277bd;
+      }
+
+      h3 {
+        font-size: 24px;
+        font-weight: 400;
+        color: #333;
+      }
+
+      em {
+        color: #4c6ca0;
+        font-style: normal;
+        font-weight: bold;
+      }
+      p {
+        font-size: 14px;
+      }
+
+      nav {
+        position: sticky;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 75px;
+        background: #385d99;
+        opacity: 0.9;
+        box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.4);
+        z-index: 1;
+      }
+      nav ul {
+        list-style: none;
+        overflow: auto;
+      }
+
+      nav ul li {
+        float: left;
+        padding: 22px 20px;
+      }
+
+      nav ul li a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      nav ul li a:hover {
+        border-bottom: solid 2px #fff;
+      }
+
+      footer {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        background: #222;
+        color: #f4f4f4;
+        padding: 5px 10px;
+      }
+      footer p {
+        font-size: 14px;
+      }
+
+      #main-header {
+        font-style: italic;
+      }
+
+      #main-header div {
+        margin-top: 100px;
+        text-align: center;
+      }
+
+      #about,
+      #products,
+      #receipe {
+        background: #f9e79f;
+        border: solid 1px #795702;
+        border-radius: 10px;
+        padding: 20px 20px;
+      }
+
+      #about p,
+      #products p,
+      #receipe p {
+        margin-bottom: 20px;
+      }
+
+      #about,
+      #products {
+        display: inline-block;
+        width: 49.5%;
+        margin-bottom: 10px;
+      }
+
+      #receipe {
+        margin: 10px 0 0 0;
+      }
+
+      .main-image {
+        display: block;
+        width: 500px;
+        margin: auto;
+        border: solid 1px #333;
+        border-radius: 10px;
+        opacity: 0.7;
+      }
+
+      .btn {
+        background: #4c6ca0;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .btn-rounded {
+        border-radius: 40px;
+      }
+
+      .images {
+        margin: 50px 0;
+      }
+      .image-1 {
+        position: relative;
+        left: 200px;
+        top: 50px;
+        height: 150px;
+        z-index: 0;
+      }
+      .image-2 {
+        display: block;
+        position: relative;
+        left: 250px;
+        height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="main-header">
+      <nav>
+        <ul>
+          <li><a href="#">Start</a></li>
+          <li><a href="#">Våra produkter</a></li>
+          <li><a href="#">Recept bank</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h1>Mormor Dagny's bageri</h1>
+        <p>Ett familje bageri i 3:e generationen</p>
+      </div>
+      <img class="main-image" src="/images/display.jpg" alt="bread-display" />
+    </header>
+    <main>
+      <section>
+        <article id="about" class="card">
+          <h3>Om vårt bageri</h3>
+          <p>
+            <span class="primary-text">Lorem</span> ipsum dolor, sit amet
+            consectetur adipisicing elit. Mollitia adipisci similique eius
+            libero. Dolor natus magni voluptates recusandae minima dolorum
+            assumenda quidem aperiam saepe? Similique, labore dignissimos neque,
+            eaque odio autem, corrupti at consequatur et numquam dolores!
+            Recusandae, corrupti magni nostrum ab labore saepe numquam nihil.
+            Explicabo quia suscipit quam.
+          </p>
+          <a class="btn btn-rounded" href="#">Läs mer här</a>
+        </article>
+        <article id="products">
+          <h3>Våra produkter</h3>
+          <p>
+            <span class="primary-text">Lorem</span> ipsum dolor sit amet
+            consectetur adipisicing elit. Amet quam molestiae, ipsa, nulla
+            repellat a explicabo nemo quo ratione eligendi tempore ea incidunt,
+            sapiente cumque facere. Similique repellat repellendus ad veniam
+            minus deleniti perspiciatis est nesciunt. Iste ut corrupti
+            doloremque at nisi, inventore, voluptatum quidem autem,
+            necessitatibus obcaecati beatae dolor ex rem expedita quia vero?
+            Fuga deleniti beatae veritatis dolores.
+          </p>
+          <a class="btn btn-rounded" href="#">Se vår produktkatalog</a>
+        </article>
+
+        <article id="receipe">
+          <h3>Recept</h3>
+          <p>
+            <span class="primary-text">Lorem</span> ipsum dolor sit amet
+            consectetur adipisicing elit. Amet quam molestiae, ipsa, nulla
+            repellat a explicabo nemo quo ratione eligendi tempore ea incidunt,
+            sapiente cumque facere. Similique repellat repellendus ad veniam
+            minus deleniti perspiciatis est nesciunt. Iste ut corrupti
+            doloremque at nisi, inventore, voluptatum quidem autem,
+            necessitatibus obcaecati beatae dolor ex rem expedita quia vero?
+            Fuga deleniti beatae veritatis dolores.
+          </p>
+          <p>
+            <em>För att få tillgång till recept så behöver du vara inloggad</em>
+          </p>
+          <a class="btn btn-rounded" href="#">Logga In</a>
+        </article>
+      </section>
+      <section class="images">
+        <img class="image-1" src="/images/breadbasket.jpg" alt="breadbasket" />
+        <img class="image-2" src="/images/baguetter.jpg" alt="breadbasket" />
+      </section>
+    </main>
+    <footer>
+      <p>Copyright &copy;2023 Mormor Dagny's bageri</p>
+    </footer>
+  </body>
+</html>

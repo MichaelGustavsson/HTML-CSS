@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Registrera dig</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      h1 {
+        font-weight: 400;
+      }
+      a {
+        text-decoration: none;
+      }
+
+      footer {
+        text-align: center;
+      }
+
+      footer a {
+        color: #3c557d;
+        font-style: italic;
+      }
+
+      .container {
+        max-width: 400px;
+        margin: auto;
+        margin-top: 50px;
+        padding: 20px;
+      }
+
+      .form {
+        background: #f9e79f;
+        border: solid 1px #795702;
+        padding: 15px 20px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+      }
+
+      .form h1,
+      .form p {
+        text-align: center;
+      }
+
+      .form .form-control {
+        margin-top: 12px;
+      }
+
+      .form .form-control label {
+        display: block;
+        color: #666;
+      }
+
+      .form .form-control input {
+        width: 100%;
+        padding: 10px;
+        border: solid 1px #666;
+        border-radius: 5px;
+        outline: none !important;
+      }
+
+      .form .form-control button {
+        display: block;
+        width: 100%;
+        background: #4c6ca0;
+        color: #f4f4f4;
+        padding: 12px;
+        cursor: pointer;
+        border: none;
+        outline: none !important;
+        margin-bottom: 10px;
+      }
+
+      .form .form-control button:hover {
+        background: #3c557d;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="form">
+        <h1>Registrera dig</h1>
+        <p>Och få tillgång till våra goda recept</p>
+        <form>
+          <div class="form-control">
+            <label for="firstName">Förnamn</label>
+            <input type="text" name="firstName" id="firstName" />
+          </div>
+          <div class="form-control">
+            <label for="lastName">Efternamn</label>
+            <input type="text" name="lastName" id="lastName" />
+          </div>
+          <div class="form-control">
+            <label for="email">E-Post</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-control">
+            <label for="password">Lösenord</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div class="form-control">
+            <label for="confirmPassword">Bekräfta lösenord</label>
+            <input
+              type="password"
+              name="confirmPassword"
+              id="confirmPassword" />
+          </div>
+          <div class="form-control">
+            <button type="submit">Registrera</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <p>Har du redan ett konto? <a href="#">Logga In</a></p>
+    </footer>
+  </body>
+</html>
