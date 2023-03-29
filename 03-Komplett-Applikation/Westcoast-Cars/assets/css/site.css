@@ -1,0 +1,288 @@
+/* fonts... */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;1,200;1,400;1,500;1,600&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navigations menu */
+nav {
+  background: #004d40;
+  overflow: auto;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+nav a {
+  color: #f4f4f4;
+}
+
+nav h1 {
+  float: left;
+  padding-top: 15px;
+}
+
+nav ul {
+  list-style: none;
+  float: right;
+}
+
+nav li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background: #00796b;
+  color: #ef6c00;
+}
+
+.container {
+  max-width: 1200px;
+  overflow: auto;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.page-title {
+  color: #ef6c00;
+}
+
+.clear {
+  clear: both;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-light {
+  background-color: #d5d3d3;
+}
+
+.bg-primary {
+  background: #00796b;
+  color: #ffb74d;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  background: #000;
+  padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-light {
+  background: #d5d3d3;
+  color: #333;
+}
+
+.btn:hover {
+  background: #e65100;
+  color: #333;
+}
+
+.box {
+  float: left;
+  width: 33.3%;
+  padding: 40px;
+  text-align: center;
+}
+
+.box i {
+  margin-bottom: 15px;
+}
+
+/* Main Content... */
+#main-content {
+  background: #00796b url('/assets/images/landing.jpg') no-repeat center
+    center/cover;
+  height: 600px;
+  padding-top: 150px;
+  text-align: center;
+}
+
+#main-content .main-content-info {
+  background: #00796b;
+  color: #fff;
+  padding: 10px;
+  opacity: 0.9;
+  border-radius: 5px;
+}
+
+#main-content .main-content-info h1 {
+  line-height: 1.8;
+  font-size: 50px;
+}
+
+#main-content .main-content-info p {
+  padding-bottom: 20px;
+}
+
+/* Main info... */
+#main-info {
+  height: 600px;
+}
+
+#main-info .info-image {
+  float: left;
+  width: 50%;
+  min-height: 100%;
+  background: url('/assets/images/display-2.jpg') no-repeat center center/cover;
+}
+
+#main-info .info-content {
+  float: right;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding: 50px 30px;
+  overflow: hidden;
+}
+
+#main-info .info-content p {
+  padding-bottom: 20px;
+}
+
+/* Feature area */
+
+#info .feature {
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align: center;
+}
+
+#info .feature i {
+  margin-bottom: 10px;
+}
+
+/* About */
+#about {
+  padding: 20px;
+  background: #ddd;
+}
+
+#about .about-left {
+  float: left;
+  width: 50%;
+  min-height: 100%;
+}
+
+#about .about-right {
+  float: right;
+  width: 50%;
+  min-height: 100%;
+}
+
+#about .about-right img {
+  display: block;
+  margin: auto;
+  height: 250px;
+  border: solid 1px #333;
+  background: #fff;
+  padding: 2px;
+}
+
+/* testimonials */
+#testimonials {
+  height: 600px;
+  background: #004d40;
+  color: #fff;
+  padding: 100px;
+}
+
+#testimonials h3 {
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 32px;
+}
+
+#testimonials div section {
+  background: #00796b;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.6);
+}
+
+#testimonials div section img {
+  display: block;
+  height: 70px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Contact page */
+
+#contact-form {
+  padding: 30px 0;
+}
+
+#contact-form .form-control {
+  margin-bottom: 15px;
+}
+
+#contact-form label {
+  display: block;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: solid 1px #ddd;
+}
+
+#contact-form textarea {
+  height: 200px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: none !important;
+  border: solid 1px #ef6c00;
+}
+
+/* Contact Info */
+#contact-info {
+  background: #004d40;
+  color: #f4f4f4;
+}
+/* Main footer */
+#main-footer {
+  text-align: center;
+  background: #444;
+  color: #fff;
+  padding: 20px;
+}
