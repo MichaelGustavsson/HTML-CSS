@@ -1,0 +1,76 @@
+/* css classes for about page */
+#about {
+  padding: 1.25rem;
+  background: #ddd;
+}
+
+#about .about-left,
+#about .about-right {
+  float: none;
+  width: 100%;
+}
+
+#about .about-left h3 {
+  text-align: center;
+  padding: 1.2rem 0;
+}
+
+#about .about-right img {
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+  height: 250px;
+  border: solid 1px #333;
+  background: #fff;
+  padding: 2px;
+}
+
+/* testimonials */
+#testimonials {
+  height: 100%;
+  background: #004d40;
+  color: #fff;
+}
+
+#testimonials h3 {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+}
+
+#testimonials div section {
+  background: #00796b;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+#testimonials div section img {
+  display: block;
+  height: 4.4rem;
+  float: left;
+  margin-right: 1.25rem;
+  border-radius: 50%;
+}
+
+/* Media Queries */
+/* min-width: 768px */
+@media (min-width: 768px) {
+  #about {
+    height: 400px;
+  }
+
+  #about .about-left,
+  #about .about-right {
+    width: 50%;
+    min-height: 100%;
+  }
+
+  #about .about-left {
+    float: left;
+  }
+
+  #about .about-right {
+    float: right;
+  }
+}

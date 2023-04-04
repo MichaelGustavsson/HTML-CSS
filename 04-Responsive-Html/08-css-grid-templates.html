@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/55174c58a9.js"
+      crossorigin="anonymous"></script>
+    <title>Grid Area Templates</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      .container {
+        display: grid;
+        grid-template-areas:
+          'header header header'
+          'content content sidebar'
+          'box-1 box-2 box-3'
+          'footer footer footer';
+
+        gap: 1rem;
+      }
+
+      header {
+        grid-area: header;
+        text-align: center;
+      }
+
+      .main-content {
+        grid-area: content;
+      }
+
+      .main-content h2 {
+        text-align: center;
+      }
+
+      aside {
+        grid-area: sidebar;
+      }
+
+      aside h3 {
+        text-align: center;
+      }
+
+      .box {
+        text-align: center;
+      }
+
+      .box-1 {
+        grid-area: box-1;
+      }
+      .box-2 {
+        grid-area: box-2;
+      }
+      .box-3 {
+        grid-area: box-3;
+      }
+
+      footer {
+        grid-area: footer;
+        text-align: center;
+      }
+
+      header,
+      aside,
+      footer,
+      .main-content,
+      .box {
+        border: solid 1px #ccc;
+        padding: 1.5rem;
+      }
+    </style>
+  </head>
+  <body class="container">
+    <header>
+      <h1>Välkommen</h1>
+    </header>
+    <section class="main-content">
+      <h2>Vilka är vi?</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, harum
+        similique voluptatem iste et maxime omnis iusto molestias consequuntur
+        ut qui accusantium autem fugiat velit reiciendis dolores tempora.
+        Maiores odit eum accusamus laboriosam dolorum molestiae qui doloremque
+        repellendus, obcaecati illum?
+      </p>
+    </section>
+    <aside>
+      <h3>Nyheter</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore modi
+        nemo velit qui, voluptatum fugiat praesentium perspiciatis assumenda
+        libero culpa.
+      </p>
+    </aside>
+    <section class="box box-1">
+      <i class="fa-solid fa-screwdriver-wrench"></i>
+      <h3>Service</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+        deserunt sit quos, ratione numquam distinctio maiores nisi veniam dolore
+        quis.
+      </p>
+    </section>
+    <section class="box box-2">
+      <i class="fa-regular fa-car-building"></i>
+      <h3>Leasing</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+        deserunt sit quos, ratione numquam distinctio maiores nisi veniam dolore
+        quis.
+      </p>
+    </section>
+    <section class="box box-3">
+      <i class="fa-solid fa-shop"></i>
+      <h3>Butik</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+        deserunt sit quos, ratione numquam distinctio maiores nisi veniam dolore
+        quis.
+      </p>
+    </section>
+    <footer><p>Copyright &copy; 2023</p></footer>
+  </body>
+</html>

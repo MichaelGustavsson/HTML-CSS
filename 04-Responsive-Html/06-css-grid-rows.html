@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid Rows</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .container {
+        display: grid;
+        grid-template-rows: 2fr 1fr 2fr 3fr;
+        grid-template-columns: repeat(2, 2fr);
+        /* implicit rows */
+        grid-auto-rows: 1fr;
+        gap: 0.8rem;
+      }
+
+      .box {
+        background: #f4f4f4;
+        border: solid 1px #ccc;
+        padding: 2rem;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">Cell 1</div>
+      <div class="box">Cell 2</div>
+      <div class="box">Cell 3</div>
+      <div class="box">Cell 4</div>
+      <div class="box">Cell 5</div>
+      <div class="box">Cell 6</div>
+      <div class="box">Cell 7</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex-Box</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      main {
+        padding: 1rem;
+      }
+
+      article {
+        background-color: cadetblue;
+        display: flex;
+        /* flex-direction: column; */
+        gap: 0.8rem;
+        /* align-items: center; */
+        /* justify-content: space-evenly; */
+        height: 50vh;
+        /* flex-wrap: wrap; */
+      }
+
+      .container {
+        display: flex;
+        gap: 1.6rem;
+      }
+
+      .container img {
+        width: 200px;
+      }
+      .box {
+        background: #f4f4f4;
+        border: solid 1px #ccc;
+        padding: 1rem;
+        text-align: center;
+        border-radius: 0.2rem;
+        /* width: 200px; */
+        /* margin-right: 1rem; */
+        /* grow, shrink, basis */
+        /* flex: 1 0 200px; */
+      }
+
+      /* Sizing */
+      /* .box-1 {
+        flex-shrink: 0;
+        flex-grow: 1;
+        flex-basis: 0;        
+      }
+
+      .box-2 {
+        flex-grow: 2;
+        flex-basis: 0;
+      }
+
+      .box-3 {
+        flex-grow: 3;
+        flex-basis: 0;
+      } */
+
+      /* Alignment */
+      .box-1 {
+        align-self: flex-end;
+      }
+
+      .box-2 {
+        align-self: flex-start;
+      }
+
+      .box-3 {
+        align-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article>
+        <section class="box box-1">
+          <h3>Här är 1</h3>
+        </section>
+        <section class="box box-2">
+          <h3>Här är 2</h3>
+        </section>
+        <section class="box box-3">
+          <h3>Här är 3</h3>
+        </section>
+      </article>
+      <div class="container">
+        <img src="/assets/images/ocean.jpg" alt="" />
+        <section>
+          <h3>Lite text</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Consequatur quaerat optio illo aspernatur voluptatum accusamus
+            laboriosam minus eligendi laudantium expedita aperiam, sunt fuga
+            perferendis itaque tempore esse, totam magnam veritatis quas,
+            possimus officiis ad? Sunt, similique. Quisquam ad nulla quo.
+          </p>
+        </section>
+        <section>
+          <h3>Lite mer text</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Consequatur quaerat optio illo aspernatur voluptatum accusamus
+            laboriosam minus eligendi laudantium expedita aperiam, sunt fuga
+            perferendis itaque tempore esse, totam magnam veritatis quas,
+            possimus officiis ad? Sunt, similique. Quisquam ad nulla quo.
+          </p>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

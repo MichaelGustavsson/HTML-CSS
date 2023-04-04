@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viewport height and width</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      header {
+        background: darkblue url('/assets/images/ocean.jpg') no-repeat center
+          center/cover;
+        color: white;
+        /* height: 100%; */
+        height: 100vh;
+        padding: 15rem 3rem;
+      }
+
+      header h1 {
+        font-size: 3rem;
+        text-align: center;
+      }
+
+      header p {
+        margin: 1rem 2rem;
+      }
+
+      section {
+        padding: 2rem;
+      }
+
+      .btn {
+        display: inline-block;
+        text-decoration: none;
+        background: darkblue;
+        color: white;
+        padding: 0.7rem 2rem;
+      }
+
+      @media (max-width: 500px) {
+        header {
+          padding: 2rem;
+        }
+        header h1 {
+          font-size: 2rem;
+        }
+
+        header p {
+          margin: 1rem 0.8rem;
+        }
+      }
+
+      @media (max-height: 450px) {
+        header {
+          padding-top: 7rem;
+        }
+        header h1 {
+          font-size: 2.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Välkommen till Westcoast Cars</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sequi
+        laboriosam iure consectetur amet hic quasi quas optio nihil architecto!
+      </p>
+      <a href="#" class="btn">Läs mer</a>
+    </header>
+    <main>
+      <article>
+        <section>
+          <h3>Om Oss</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+            inventore officia dignissimos tenetur non, eveniet ab id saepe
+            soluta pariatur atque distinctio porro dolorum doloribus cupiditate
+            quod laborum nobis iure! Eius suscipit qui consequatur harum nulla
+            adipisci blanditiis animi cumque, quibusdam, officia dolore optio
+            repellendus sit voluptatum accusamus eveniet sunt?
+          </p>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
